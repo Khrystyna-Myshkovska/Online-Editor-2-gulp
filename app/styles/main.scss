@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100px;
+    background-color: gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.areaForText {
+    padding: 20px 40px;
+}
+
+.btn {
+    border: none;
+    width: 40px;
+    min-height: 40px;
+    margin-top: 40px;
+    cursor: pointer;
+    background: rgb(228, 221, 221);
+}
+
+.btn:hover {
+    background: rgb(209, 205, 205);
+}
+
+.viewMore {
+    border-radius: 5px;
+}
+
+button.btn.boldText {
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 10px;
+
+}
+
+button.italicText {
+    border: none;
+    margin-left: -5px;
+    border-radius: 0px;
+}
+
+.underlineText {
+    margin-left: -5px;
+    border-radius: 0;
+}
+
+.linethText {
+    margin-left: -5px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.textLeft {
+    margin-left: 10px;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+.textCenter {
+    border-radius: 0px;
+    margin-left: -5px;
+}
+
+.textRight {
+    border-radius: 0px 5px 5px 0px ;
+    margin-left: -5px;
+}
+#btnGroupDrop1{
+    margin-left: 10px;
+    border-radius: 5px 0px 0px 5px ;
+}
+#btnGroupDrop2{
+    border-radius: 0px 0px 0px 0px ;
+    margin-left: -5px;
+}
+.btn.border1{
+    border-radius: 0px 0px 0px 0px ;
+    margin-left: -5px;
+}
+.btn.border2{
+    border-radius: 0px 5px 5px 0px ;
+    margin-left: -5px;
+}
+.btn.border3{
+    margin-left: 10px;
+}
+.dropdown-toggle {
+    width: 55px;
+}
+
+img {
+    margin-top: -2px;
+}
+
+.fontW {
+    font-weight: bold;
+}
+
+.fontI {
+    font-style: italic;
+}
+
+.fontU {
+    text-decoration: underline;
+}
+
+.fontS {
+    text-decoration: line-through;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.georgia {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.franklin {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.timesNewRoman {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.px12 {
+    font-size: 12px;
+}
+
+.px14 {
+    font-size: 14px;
+}
+
+.px16 {
+    font-size: 16px;
+}
+
+.px18 {
+    font-size: 18px;
+}
+
+.px20 {
+    font-size: 20px;
+}
+
+.px22 {
+    font-size: 22px;
+}
+
+.px25 {
+    font-size: 25px;
+}
+
+.px30 {
+    font-size: 30px;
+}
+
+.boxColor,
+.bgImageFlex,
+.boxColor2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.smallBox,
+.smallBox2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.color1 {
+    background: rgb(12, 161, 146);
+}
+
+.color2 {
+    background: rgb(2, 134, 119);
+}
+
+.color3 {
+    background: rgb(30, 174, 102);
+}
+
+.color4 {
+    background: rgb(19, 145, 84);
+}
+
+.color5 {
+    background: rgb(35, 137, 208);
+}
+
+.color6 {
+    background: rgb(24, 114, 177);
+}
+
+.color7 {
+    background: rgb(203, 113, 245);
+}
+
+.color8 {
+    background: rgb(138, 72, 170);
+}
+
+.color9 {
+    background: rgb(37, 64, 90);
+}
+
+.color10 {
+    background: rgb(26, 52, 72);
+}
+
+.color11 {
+    background: rgb(228, 178, 7);
+}
+
+.color12 {
+    background: rgb(233, 147, 10);
+}
+
+.color13 {
+    background: rgb(222, 126, 28);
+}
+
+.color14 {
+    background: rgb(202, 84, 0);
+}
+
+.color15 {
+    background: rgb(223, 83, 51);
+}
+
+.color16 {
+    background: rgb(182, 61, 29);
+}
+
+.color17 {
+    background: rgb(216, 222, 223);
+}
+
+.color18 {
+    background: rgb(174, 182, 185);
+}
+
+.color19 {
+    background: rgb(136, 155, 155);
+}
+
+.color20 {
+    background: rgb(116, 131, 132);
+}
+
+.color21 {
+    background: rgb(0, 0, 0);
+}
+
+.nav-tabs {
+    margin-bottom: 10px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.bgImage {
+    margin: 3px;
+}
+
+
+.bgImage {
+    width: 145px;
+    height: 65px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.bg1 {
+    background-image: url('/build/images/img/img1.jpg');
+}
+
+.bg2 {
+    background-image: url('/build/images/img/img2.jpg');
+}
+
+.bg3 {
+    background-image: url('/build/images/img/img3.jpg');
+}
+
+.bg4 {
+    background-image: url('/build/images/img/img4.jpg');
+}
+
+.bg5 {
+    background-image: url('/build/images/img/img5.jpg');
+}
+
+.bg6 {
+    background-image: url('/build/images/img/img6.jpg');
+}
+
+.bg7 {
+    background-image: url('/build/images/img/img7.jpg');
+}
+
+.bg8 {
+    background-image: url('/build/images/img/img8.jpg');
+}
+
+.bg9 {
+    background-image: url('/build/images/img/img9.jpg');
+}
+
+.areaForText {
+    min-height: 86.3vh;
+    overflow-x: hidden
+}
+
+.sign {
+    margin: 0 auto;
+}
+
+.btnSubmit {
+    margin-top: 5px;
+    width: 100%;
+    background-color: #0069d9;
+}
+
+.btnSubmit:hover {
+    background-color: #3d658f;
+}
+
+.loginHelpValue p,
+.loginHelpWrong p {
+    color: red;
+}
+
+#textarea {
+    width: 1500px;
+    height: 700px;
+    border: none;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    font-size: 15px;
+}
+
+
+.resetTable,
+.createTable,
+.resetOl,
+.resetUl,
+.createUl,
+.createOl {
+    width: 49.5%;
+    color: white
+}
+
+.resetTable,
+.resetOl,
+.resetUl {
+    background: rgb(212, 63, 56);
+}
+
+.createTable,
+.createOl,
+.createUl {
+    background: rgb(19, 137, 55)
+}
+
+.createTable:hover,
+.createOl:hover,
+.createUl:hover {
+    background: rgb(24, 167, 67)
+}
+
+.resetTable:hover,
+.resetOl:hover,
+.resetUl:hover {
+    background: rgb(233, 78, 70);
+}
+
+.valueWrong p,
+.olWrong p,
+.ulWrong p {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: red;
+}
+
+ol,
+ul {
+    margin-left: 40px;
+}

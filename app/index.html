@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS KR 2 (GULP)</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <nav>
+
+                <button disabled class="btn viewMore"> <img src="images/icons/html.png" alt=""></button>
+                <button class="btn boldText"> <img src="images/icons/b.png" alt=""></button>
+                <button class="btn italicText"> <img src="images/icons/i.png" alt=""></button>
+                <button class="btn underlineText"><img src="images/icons/u.png" alt=""></button>
+                <button class="btn linethText"><img src="images/icons/s.png" alt=""></button>
+                <button class="btn textLeft"><img src="images/icons/left.png" alt=""></button>
+                <button class="btn textCenter"> <img src="images/icons/center.png" alt=""></button>
+                <button class="btn textRight"><img src="images/icons/right.png" alt=""></button>
+
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/icons/a.png" alt="">
+                    </button>
+                    <div class="dropdown-menu " aria-labelledby="btnGroupDrop1">
+                        <a class=" dropdown-item " href="#" value='fontFamily' id="arial">
+                            <span class="arial">Arial</span>
+                        </a>
+                        <a class="dropdown-item " href="#" value='fontFamily' id="georgia">
+                            <span class="georgia">Georgia</span>
+                        </a>
+                        <a class="dropdown-item" href="#" value='fontFamily'>
+                            <span class="impact">Impact</span>
+                        </a>
+                        <a class="dropdown-item" href="#" value='fontFamily'>
+                            <span class="franklin">Franklin</span>
+                        </a>
+                        <a class="dropdown-item" href="#" value='fontFamily'>
+                            <span class="timesNewRoman">Times New Roman</span>
+                        </a>
+                        <a class="dropdown-item" href="#" value='fontFamily'>
+                            <span class="verdana">Verdana</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btnGroupDrop2" type="button" class="btn btn-secondary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/icons/T.png" alt="">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px12">12px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px14">14px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px16">16px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px18">18px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px20">20px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px22">22px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px25">25px</span></a>
+                        <a class="dropdown-item" href="#" value='fontSize'><span class="px30">30px</span></a>
+                    </div>
+                </div>
+                <button type="button" class="btn border1 btn-secondary btn-primary" data-toggle="modal"
+                    data-target="#colorChange">
+                    <img src="images/icons/color.png" alt="">
+                </button>
+                <button type="button" class="btn border2 btn-secondary btn-primary" data-toggle="modal"
+                    data-target="#bgChange">
+                    <img src="images/icons/img.png" alt="">
+                </button>
+
+
+                <button type="button" class="btn border3 btn-secondary btn-primary lastB" data-keyboard="false"
+                    data-toggle="modal" data-backdrop="static" data-target="#lock">
+                    <img class="lockOnChange" src="images/icons/lock.png" alt="">
+                </button>
+
+            </nav>
+            <div class="secondaryButtons displayNone">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-secondary saveBtn"><img src="images/icons/save.png"
+                                alt=""></button>
+                        <button type="button" class="btn btn-secondary tableBtn btn-primary" data-toggle="modal"
+                            data-target="#tableButton"><img src="images/icons/table.png" alt=""></button>
+                        <button type="button" class="btn btn-secondary btn-primary olBtn" data-toggle="modal"
+                            data-target="#olButton"><img src="images/icons/ol.png" alt=""></button>
+                        <button type="button" class="btn btn-secondary  btn-primary ulBtn" data-toggle="modal"
+                            data-target="#ulButton"><img src="images/icons/ul.png" alt=""></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="areaForText">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, sed.</p>
+
+        </div>
+
+        <!-- Модальне вікно, яке відповідає за зміну кольору тексту -->
+
+        <div class="modal fade" id="colorChange" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Choose text color</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="boxColorDisplay">
+                            <div class="boxColor">
+
+                                <div class="smallBox color1 "></div>
+                                <div class="smallBox color2 "></div>
+                                <div class="smallBox color3 "></div>
+                                <div class="smallBox color4 "></div>
+                                <div class="smallBox color5 "></div>
+                                <div class="smallBox color6 "></div>
+                                <div class="smallBox color7 "></div>
+                                <div class="smallBox color8 "></div>
+                                <div class="smallBox color9 "></div>
+                                <div class="smallBox color10 "></div>
+                                <div class="smallBox color11 "></div>
+                                <div class="smallBox color12 "></div>
+                                <div class="smallBox color13 "></div>
+                                <div class="smallBox color14 "></div>
+                                <div class="smallBox color15 "></div>
+                                <div class="smallBox color16 "></div>
+                                <div class="smallBox color17 "></div>
+                                <div class="smallBox color18 "></div>
+                                <div class="smallBox color19 "></div>
+                                <div class="smallBox color20 "></div>
+                                <div class="smallBox color21 "></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Модальне вікно, яке відповідає за зміну бекграунду(колір/картинка/вибрати файл) -->
+
+        <div class="modal fade" id="bgChange" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Choose background color or image</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link bgBtn active" href="#">Colors</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link imgBtn " href="#">Images</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fileBtn" href="#">Files</a>
+                            </li>
+                        </ul>
+                        <div class="boxColorDisplay2 ">
+                            <div class="boxColor2">
+                                <div class="smallBox2 color1 "></div>
+                                <div class="smallBox2 color2 "></div>
+                                <div class="smallBox2 color3 "></div>
+                                <div class="smallBox2 color4 "></div>
+                                <div class="smallBox2 color5 "></div>
+                                <div class="smallBox2 color6 "></div>
+                                <div class="smallBox2 color7 "></div>
+                                <div class="smallBox2 color8 "></div>
+                                <div class="smallBox2 color9 "></div>
+                                <div class="smallBox2 color10 "></div>
+                                <div class="smallBox2 color11 "></div>
+                                <div class="smallBox2 color12 "></div>
+                                <div class="smallBox2 color13 "></div>
+                                <div class="smallBox2 color14 "></div>
+                                <div class="smallBox2 color15 "></div>
+                                <div class="smallBox2 color16 "></div>
+                                <div class="smallBox2 color17 "></div>
+                                <div class="smallBox2 color18 "></div>
+                                <div class="smallBox2 color19 "></div>
+                                <div class="smallBox2 color20 "></div>
+                                <div class="smallBox2 color21 "></div>
+                            </div>
+                        </div>
+                        <div class="bgStyle displayNone">
+                            <div class="bgImageFlex">
+                                <div class="bg1 bgImage"></div>
+                                <div class="bg2 bgImage"></div>
+                                <div class="bg3 bgImage"></div>
+                                <div class="bg4 bgImage"></div>
+                                <div class="bg5 bgImage"></div>
+                                <div class="bg6 bgImage"></div>
+                                <div class="bg7 bgImage"></div>
+                                <div class="bg8 bgImage"></div>
+                                <div class="bg9 bgImage"></div>
+                            </div>
+                        </div>
+                        <form name="getFile" class="getFile displayNone">
+                            <div class="form-group ">
+                                <label for="exampleFormControlFile1"> </label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальне вікно, яке відповідає за форму Sign In -->
+
+        <div class="modal fade" id="lock" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <h3 class="sign">Sign In</h3>
+                        </h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <form class="fo">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control loginLock" id="exampleInputLogin1"
+                                    aria-describedby="loginHelp" placeholder="Login here">
+
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control passwordLock" id="exampleInputPassword1"
+                                    placeholder="Password here">
+                            </div>
+                            <small class="form-text text-muted loginHelpValue displayNone">
+                                <p>Value is empty</p>
+                            </small>
+                            <small class="form-text text-muted loginHelpWrong displayNone">
+                                <p>Check your login or password</p>
+                            </small>
+                            <button type="button" class="btn btn-primary btnSubmit"> Sign In </button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="myTextArea displayNone">
+            <textarea name="textarea" class="textarea" id="textarea"></textarea>
+        </div>
+
+        <!--Створення таблиці -->
+
+        <div class="modal fade bd-example-modal-lg" id="tableButton" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create table</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form name="tableForm">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputTr">Count TR:</label>
+                                    <input type="text" class="form-control countTr" id="inputTr"
+                                        placeholder="Type here">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputTd">Count TD:</label>
+                                    <input type="text" class="form-control countTd" id="inputTd"
+                                        placeholder="Type here">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputW">Width of TD:</label>
+                                    <input type="text" class="form-control widthTd" id="inputW" placeholder="Type here">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputH">Height of TD:</label>
+                                    <input type="text" class="form-control heightTd" id="inputH"
+                                        placeholder="Type here">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+
+                                    <label for="inputB">Width of border:</label>
+                                    <input type="text" class="form-control borderWidth" id="inputB"
+                                        placeholder="Type here">
+
+
+                                </div>
+                                <div class="form-group col-md-3">
+
+                                    <label for="inputStyleB">Style of border:</label>
+                                    <select id="inputStyleB" class="form-control borderType" name="borderType">
+                                        <option selected disabled>choose style</option>
+                                        <option>dotted</option>
+                                        <option>dashed</option>
+                                        <option>solid</option>
+                                        <option>double</option>
+                                        <option>groove</option>
+                                        <option>ridge</option>
+                                        <option>inset</option>
+                                        <option>outset</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputStyleC">Color of border:</label>
+                                    <select id="inputStyleC" class="form-control borderColor" name="borderColor">
+                                        <option selected disabled>choose color</option>
+                                        <option>black</option>
+                                        <option>red</option>
+                                        <option>green</option>
+                                        <option>blue</option>
+                                        <option>yellow</option>
+                                        <option>white</option>
+                                        <option>gray</option>
+                                        <option>pink</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </form>
+                        <small class="form-text text-muted valueWrong displayNone">
+                            <p>Value is wrong</p>
+                        </small>
+                        <button type="button" class="btn btn-primary resetTable"> Reset </button>
+                        <button type="button" class="btn btn-primary createTable">Create table</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Створення списку Ul -->
+
+        <div class="modal fade" id="ulButton" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5 class="modal-title">
+                            <h3>Create Ul</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <form name="ul">
+                            <div class="form-group">
+                                <label for="createUl">Width of border:</label>
+
+                                <input type="text" class="form-control countUl" id="createUl" aria-describedby="ulHelp"
+                                    placeholder="Type here">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="inputStyleListUl">Type of list marks:</label>
+                                <select id="inputStyleListUl" class="form-control ulList" name="selectUl">
+                                    <option selected disabled>choose type marks</option>
+                                    <option>circle</option>
+                                    <option>disc</option>
+                                    <option>square</option>
+
+
+                                </select>
+
+
+
+                            </div>
+
+                            <small class="form-text text-muted ulWrong displayNone">
+                                <p>invalid value</p>
+                            </small>
+                            <button type="button" class="btn btn-primary resetUl"> Reset </button>
+                            <button type="button" class="btn btn-primary createUl">Create list</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Створення списку ol -->
+        <div class="modal fade" id="olButton" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                        <h5 class="modal-title">
+
+                            <h3>Create Ol</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <form name="ol">
+                            <div class="form-group">
+                                <label for="createOl">Width of border:</label>
+
+                                <input type="text" class="form-control countOl" aria-describedby="createOl"
+                                    id="createOl" placeholder="Type here">
+
+                            </div>
+                            <div class="form-group">
+
+                                <label for="inputStyleListOl">Type mark of list:</label>
+                                <select id="inputStyleListOl" class="form-control olList" name="OlSelect">
+                                    <option selected disabled>choose type marks</option>
+                                    <option>1</option>
+                                    <option>I</option>
+                                    <option>i</option>
+                                    <option>A</option>
+                                    <option>a</option>
+
+                                </select>
+
+
+                            </div>
+
+                            <small class="form-text text-muted olWrong displayNone">
+                                <p>invalid value</p>
+                            </small>
+                            <button type="button" class="btn btn-primary resetOl"> Reset </button>
+                            <button type="button" class="btn btn-primary createOl">Create list</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+
+</body>
+
+
+</html>
